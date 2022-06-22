@@ -1,0 +1,26 @@
+@mixin transition {
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+@mixin heading-2 {
+    box-sizing: border-box;
+    color: rgb(29, 33, 39);
+    font-family: $primary-font;
+    font-size: 30px;
+    height: 30px;
+    margin-inline: 150px;
+    margin-bottom: 5px;
+}
+
+@mixin subheading {
+    box-sizing: border-box;
+    color: rgb(119, 119, 119);
+    display: block;
+    font-family: $primary-font;
+    font-size: 17.5px;
+    height: 28px;
+    margin-inline: 150px;
+}

@@ -1,0 +1,82 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    border: 1px solid rgb(209, 209, 209);
+
+    .photo {
+
+        img {
+            @include transition;
+            display: block;
+            height: 250px;
+            position: relative;
+            z-index: -1;
+            width: fit-content;
+        }
+    }
+
+    &:hover {
+        img {
+            @include transition;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .title {
+            background-color: #008fe2;
+            @include transition;
+            cursor: pointer;
+
+            p {
+                color: white
+            }
+
+            h4 {
+                color: white;
+            }
+
+            .arrow {
+                color: white;
+            }
+        }
+    }
+
+    .title {
+        color: rgb(0, 143, 226);
+        display: block;
+        font-family: $primary-font;
+        font-size: 14px;
+        height: 80px;
+
+    }
+
+    p {
+        display: block;
+        margin-inline-start: 20px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        color: rgb(119, 119, 119);
+        margin-bottom: 0px;
+        width: fit-content;
+        position: relative;
+        top: 10px;
+    }
+
+    h4 {
+        margin-inline-start: 20px;
+        color: rgb(29, 33, 39);
+        margin-top: 0px;
+        width: fit-content;
+        position: relative;
+        bottom: 15px;
+    }
+
+    .arrow {
+        margin-left: 140px;
+        font-size: 30px;
+        color: #000000;
+
+    }
+}

@@ -1,0 +1,36 @@
+.department {
+    display: flex;
+    gap: 20px;
+
+    img {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    div {
+        h4 {
+
+            a {
+                color: $subheading-color;
+                display: inline;
+                font-family: $primary-font;
+                font-size: 20px;
+                font-weight: 600;
+                text-align: left;
+                text-decoration: none;
+
+                &:hover {
+                    @include transition;
+                    color: rgb(0, 143, 226, 0.8);
+                }
+            }
+        }
+
+        p {
+            width: 200px;
+            color: rgb(119, 119, 119);
+            font-weight: 400
+        }
+    }
+
+}

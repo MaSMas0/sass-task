@@ -1,0 +1,16 @@
+.doctors{
+    h2 {
+        @include heading-2
+    }
+
+    .subheading {
+        @include subheading
+    }
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 150px;
+
+}
+}

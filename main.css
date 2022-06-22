@@ -1,0 +1,204 @@
+.department {
+  display: flex;
+  gap: 20px;
+}
+.department img {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.department div h4 a {
+  color: rgb(0, 143, 226);
+  display: inline;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  text-decoration: none;
+}
+.department div h4 a:hover {
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease;
+  color: rgba(0, 143, 226, 0.8);
+}
+.department div p {
+  width: 200px;
+  color: rgb(119, 119, 119);
+  font-weight: 400;
+}
+
+.departments {
+  background-color: rgb(244, 244, 244);
+}
+.departments h2 {
+  box-sizing: border-box;
+  color: rgb(29, 33, 39);
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  height: 30px;
+  margin-inline: 150px;
+  margin-bottom: 5px;
+}
+.departments .subheading {
+  box-sizing: border-box;
+  color: rgb(119, 119, 119);
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17.5px;
+  height: 28px;
+  margin-inline: 150px;
+}
+.departments .container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 30px;
+  column-gap: 40px;
+  margin-inline: 150px;
+}
+@media only screen and (max-width: 1000px) {
+  .departments .container {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .departments .container {
+    grid-template-columns: auto;
+    margin-top: 50px;
+  }
+}
+.departments .viewBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 100px;
+}
+.departments .viewBtn .btnview {
+  border: 2px solid rgb(36, 36, 36);
+  border-radius: 30px;
+  box-sizing: border-box;
+  color: rgb(82, 82, 82);
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease;
+  width: 150px;
+}
+.departments .viewBtn .btnview:hover {
+  background-color: rgb(29, 33, 39);
+  color: white;
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+.doctors h2 {
+  box-sizing: border-box;
+  color: rgb(29, 33, 39);
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  height: 30px;
+  margin-inline: 150px;
+  margin-bottom: 5px;
+}
+.doctors .subheading {
+  box-sizing: border-box;
+  color: rgb(119, 119, 119);
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17.5px;
+  height: 28px;
+  margin-inline: 150px;
+}
+.doctors .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-left: 150px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  border: 1px solid rgb(209, 209, 209);
+}
+.card .photo img {
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease;
+  display: block;
+  height: 250px;
+  position: relative;
+  z-index: -1;
+  width: fit-content;
+}
+.card:hover img {
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.card:hover .title {
+  background-color: #008fe2;
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease;
+  cursor: pointer;
+}
+.card:hover .title p {
+  color: white;
+}
+.card:hover .title h4 {
+  color: white;
+}
+.card:hover .title .arrow {
+  color: white;
+}
+.card .title {
+  color: rgb(0, 143, 226);
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  height: 80px;
+}
+.card p {
+  display: block;
+  margin-inline-start: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: rgb(119, 119, 119);
+  margin-bottom: 0px;
+  width: fit-content;
+  position: relative;
+  top: 10px;
+}
+.card h4 {
+  margin-inline-start: 20px;
+  color: rgb(29, 33, 39);
+  margin-top: 0px;
+  width: fit-content;
+  position: relative;
+  bottom: 15px;
+}
+.card .arrow {
+  margin-left: 140px;
+  font-size: 30px;
+  color: #000000;
+}
+
+/*# sourceMappingURL=main.css.map */

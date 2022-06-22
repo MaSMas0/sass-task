@@ -1,0 +1,61 @@
+.departments {
+    background-color: rgb(244, 244, 244);
+
+    h2 {
+        @include heading-2
+    }
+
+    .subheading {
+        @include subheading
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 30px;
+        column-gap: 40px;
+        margin-inline: 150px;
+
+        @media only screen and (max-width: 1000px) {
+            grid-template-columns: auto auto;
+        }
+
+        @media only screen and (max-width: 800px) {
+            grid-template-columns: auto;
+            margin-top: 50px;
+
+        }
+
+
+    }
+
+    .viewBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-block: 100px;
+
+        .btnview {
+            border: 2px solid rgb(36, 36, 36);
+            border-radius: 30px;
+            box-sizing: border-box;
+            color: rgb(82, 82, 82);
+            cursor: pointer;
+            font-family:$primary-font;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 10px 30px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            @include transition;
+            width: 150px;
+            &:hover {
+                background-color: $heading-color;
+                color: white;
+                @include transition
+            }
+        }
+    }
+
+}
